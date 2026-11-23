@@ -1,0 +1,7 @@
+{
+  "name": "claude-mods",
+  "owner": { "name": "Ben" },
+  "plugins": [
+    { "name": "ben", "source": "./plugins/ben", "description": "Ben's Claude Code mods" }
+  ]
+}

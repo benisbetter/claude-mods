@@ -1,0 +1,1 @@
+{ "name": "ben", "version": "0.1.0", "description": "Ben's Claude Code mods. Prompt Master: one click rewrites your rough draft into a better prompt.", "license": "MIT", "types": "./types/index.d.ts" }
