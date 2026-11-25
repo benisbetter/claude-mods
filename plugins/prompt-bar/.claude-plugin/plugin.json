@@ -1,0 +1,1 @@
+{ "name": "prompt-bar", "version": "0.1.0", "description": "Bar above the prompt: rings for context fill and 5-hour/7-day limits, prompt cache warm/cold, and a Master prompt button.", "license": "MIT", "author": { "name": "Ben" }, "types": "./types/index.d.ts" }

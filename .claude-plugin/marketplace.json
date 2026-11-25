@@ -1,7 +1,18 @@
 {
   "name": "claude-mods",
-  "owner": { "name": "Ben" },
+  "owner": {
+    "name": "Ben"
+  },
   "plugins": [
-    { "name": "ben", "source": "./plugins/ben", "description": "Ben's Claude Code mods" }
+    {
+      "name": "ben",
+      "source": "./plugins/ben",
+      "description": "Ben's Claude Code mods"
+    },
+    {
+      "name": "prompt-bar",
+      "source": "./plugins/prompt-bar",
+      "description": "Rings for context and 5h/7d limits, prompt cache warm/cold, and a Master prompt button above the prompt box"
+    }
   ]
 }
