@@ -23,7 +23,7 @@ claude plugin install ben --marketplace benisbetter/claude-mods
 claude plugin install prompt-bar --marketplace benisbetter/claude-mods
 ```
 
-Answer `y` to add the marketplace, then pick the user scope. This repository is private, so the machine needs a git credential for github.com first (`gh auth login`, then `gh auth setup-git`).
+Answer `y` to add the marketplace, then pick the user scope.
 
 ## Adding a mod
 
