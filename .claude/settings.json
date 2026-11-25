@@ -8,6 +8,7 @@
     }
   },
   "enabledPlugins": {
-    "prompt-bar@claude-mods": true
+    "prompt-bar@claude-mods": true,
+    "ben@claude-mods": false
   }
 }
