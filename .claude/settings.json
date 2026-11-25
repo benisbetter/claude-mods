@@ -1,0 +1,13 @@
+{
+  "extraKnownMarketplaces": {
+    "claude-mods": {
+      "source": {
+        "source": "github",
+        "repo": "benisbetter/claude-mods"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "prompt-bar@claude-mods": true
+  }
+}
