@@ -32,7 +32,7 @@ export const cacheLabel = (at: number | null, now: number) => {
   return left > 0 ? { warm: true, text: `cache warm ${left}m` } : { warm: false, text: 'cache cold' }
 }
 
-const PREFIX = '!!'
+const PREFIX = '++'
 export const draftOf = (text: string) =>
   text.trimStart().startsWith(PREFIX) ? text.trimStart().slice(PREFIX.length).trim() : undefined
 
@@ -52,8 +52,8 @@ async function masterPrompt($: EngineInterface) {
   if (await read($, isRewriting)) return
   const { text } = await $.prompt.read()
   if (!text.trim()) {
-    // Desktop app: the box can't be read, so point to the !! route.
-    $.ui.toast('Master prompt: start your message with !! and send it')
+    // Desktop app: the box can't be read, so point to the ++ route.
+    $.ui.toast('Master prompt: start your message with ++ and send it')
     return
   }
   await update($, isRewriting, () => true)
@@ -77,12 +77,12 @@ async function masterPrompt($: EngineInterface) {
 
 
 export const register: Register = on => {
-  // !! draft -> rewritten prompt is sent instead. Works in the desktop app.
+  // ++ draft -> rewritten prompt is sent instead. Works in the desktop app.
   on('prompt.submit', async ($, e, next) => {
     const draft = e.command || e.isMeta ? undefined : draftOf(e.text)
     if (draft === undefined) return next(e)
     if (!draft) {
-      $.ui.toast('Master prompt: type a draft after !!')
+      $.ui.toast('Master prompt: type a draft after ++')
       return { drop: 'empty draft' }
     }
     await update($, isRewriting, () => true)
